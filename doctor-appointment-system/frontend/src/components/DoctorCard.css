@@ -1,0 +1,42 @@
+.doctor-card {
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.doctor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.doctor-img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 14px;
+  border: 3px solid var(--color-sage);
+}
+
+.doctor-info h3 { font-size: 18px; margin-bottom: 4px; }
+
+.doctor-spec {
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0 0 8px;
+}
+
+.doctor-meta {
+  font-size: 13px;
+  color: var(--color-muted);
+  margin-bottom: 6px;
+}
+.doctor-meta .dot { margin: 0 6px; }
+
+.doctor-time {
+  font-size: 12px;
+  color: var(--color-muted);
+  margin-bottom: 16px;
+}
+
+.doctor-book-btn { width: 100%; }

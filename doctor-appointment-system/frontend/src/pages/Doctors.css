@@ -1,0 +1,39 @@
+.doctors-page { padding: 48px 0 80px; }
+
+.doctors-header { text-align: center; margin-bottom: 32px; }
+.doctors-header h1 { font-size: 32px; margin-bottom: 8px; }
+.doctors-header p { color: var(--color-muted); }
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.filter-chip {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-border);
+  background: white;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-muted);
+  transition: all 0.15s ease;
+}
+.filter-chip:hover { border-color: var(--color-primary); color: var(--color-primary); }
+.filter-chip.active { background: var(--color-primary); border-color: var(--color-primary); color: white; }
+
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .doctors-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .doctors-grid { grid-template-columns: 1fr; }
+}

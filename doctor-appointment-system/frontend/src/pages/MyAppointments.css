@@ -1,0 +1,37 @@
+.appointments-page { padding: 48px 0 90px; }
+.appointments-page h1 { font-size: 28px; margin-bottom: 32px; }
+
+.appointments-list { display: flex; flex-direction: column; gap: 16px; }
+
+.appointment-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 20px;
+}
+
+.appt-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.appt-details { flex: 1; }
+.appt-details h4 { font-size: 16px; margin-bottom: 2px; }
+.appt-spec { font-size: 13px; color: var(--color-accent); font-weight: 600; margin: 0 0 6px; }
+.appt-datetime { font-size: 13px; color: var(--color-muted); margin: 0; }
+.appt-reason { font-size: 13px; color: var(--color-muted); font-style: italic; margin: 6px 0 0; }
+
+.appt-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .appointment-item { flex-wrap: wrap; }
+  .appt-actions { flex-direction: row; width: 100%; justify-content: space-between; }
+}

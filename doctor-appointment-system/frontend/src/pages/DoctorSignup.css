@@ -1,0 +1,15 @@
+.doctor-signup-card {
+  max-width: 640px !important;
+}
+
+.doctor-signup-card .doctor-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+}
+
+@media (max-width: 600px) {
+  .doctor-signup-card .doctor-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
